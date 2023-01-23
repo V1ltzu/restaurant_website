@@ -34,9 +34,20 @@ body {
     height: 80px; /* set the height of the header container */
     box-sizing: border-box; /* include the padding and border in the total width and height */
     padding: 10px 16px;
-    background: #5d5c61;
+    background: #006e6e;
     color: #f1f1f1;
     text-align: left;
+}
+
+.header-links{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    font-size: 20px;
+    cursor: pointer;
+}
+a:hover{
+    color: rgb(0, 0, 0);
 }
 
 
@@ -63,7 +74,7 @@ body {
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: #5d5c61;
+    background-color: #006e6e;
     color: white;
     text-align: center;
     text-align: 1vw;
@@ -103,4 +114,9 @@ button {
     width: 25px;
     height: 25px;
     object-fit: contain;
+}
+
+.contact-info{
+    display: flex;
+    flex-direction: column;
 }
