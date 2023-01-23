@@ -4,11 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=ä, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cool Restaurant</title>
     <link rel="stylesheet" href="style.css">
-
-
 
 </head>
 
@@ -16,12 +14,20 @@
 
     <div class="container">
 
-        <div class="header" id="myHeader">
-            <h2 style="font-size: 1.5vw;">Cool Restaurant</h2>
+        <div class="header sticky" id="myHeader">
+            <img src="logo.png" alt="Logo" class="logo">
+            <h2 style="font-size: 18px;">Cool Restaurant</h2>
+            <div class="header-links">
+            <a>Menu</a>
+            <a>Order Online</a>
+            <a>Reservations</a>
+            <a>About Us</a>
         </div>
+        </div>
+    </div>
 
         <div class="content">
-            <img src="Meal-Plan-plate-protein.png" width="25%" height="25%">
+            <img src="Meal-Plan-plate-protein.png" alt="Foodplate">
             <h3>On Scroll Sticky Header</h3>
             <p>The header will stick to the top when you reach its scroll position.</p>
             <p>Scroll back up to remove the sticky effect.</p>
@@ -55,8 +61,25 @@
         </script>
 
         <div class="footer">
-            <p style="margin-right: 1250px;">Contact:</p>
-            <p style="margin-right: 1000px">044 123 4567 89</p>
+            <div class="contact-info">
+                <h3>Contact Us:</h3>
+                <div class="info-box">
+                  <p>Cool Restaurant</p>
+                  <p>Address: Feikkikatu 7, Hämeenlinna</p>
+                </div>
+                <div class="info-box">
+                  <p>Phone: 044 123 4567 89</p>
+                  <p>Email: cool.restaurant@gmail.com</p>
+                </div>
+                <div class="social-media">
+                    <a href="#">
+                        <img src="fb_logo.png" alt="Facebook icon"></a>
+                    <a href="#">
+                        <img src="twt_logo.png" alt="Twitter icon"></a>
+                    <a href="#">
+                        <img src="ig_logo.png" alt="Instagram icon"></a>
+                </div>
+              </div>
         </div>
 
     </div>

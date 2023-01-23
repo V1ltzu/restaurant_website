@@ -1,5 +1,14 @@
+.logo {
+    width: 60px; 
+    height: 60px; 
+    object-fit: contain; 
+    float: left; 
+    margin-right: 10px; 
+
+}
+
 h2 {
-    font-family: Times;
+    font-family: Times, serif;
     font-weight: bolder;
 }
 
@@ -20,28 +29,22 @@ body {
     text-align: center;
 }
 
-header {
-
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: #5d5c61;
-    color: white;
-    text-align: center;
-    text-align: 1vw;
-}
-
-
 .header {
+    width: 100%; /* set the width of the header container */
+    height: 80px; /* set the height of the header container */
+    box-sizing: border-box; /* include the padding and border in the total width and height */
     padding: 10px 16px;
     background: #5d5c61;
     color: #f1f1f1;
+    text-align: left;
 }
 
 
-.content {
+.content img{
     padding: 16px;
+    width: 40%;
+    height: 40%;
+    object-fit: contain;
 }
 
 
@@ -64,4 +67,40 @@ header {
     color: white;
     text-align: center;
     text-align: 1vw;
+}
+
+button {
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    float: right;
+    margin-left: 10px;
+  }
+
+  .header-links {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -35px;
+    margin-right: 10px; 
+    padding-left: 10px 10px;
+  }
+  
+  button:hover {
+    background-color: darkblue;
+  }
+
+  .social-media {
+    display: flex; 
+    justify-content: center; 
+    image-resolution: 50%;
+}
+
+.social-media a img{
+    display: inline-block; 
+    margin: 0 10px; 
+    width: 25px;
+    height: 25px;
+    object-fit: contain;
 }
