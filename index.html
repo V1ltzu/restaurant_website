@@ -12,78 +12,56 @@
 
 <body>
 
-    <div class="container">
-        <div class="header sticky" id="myHeader">
-            <div>
-                <img src="image/logo.png" alt="Logo" class="logo">
-            </div>
-            <div>
-                <h2 style="font-size: 18px;">Cool Restaurant</h2>
-            </div>
-            
-            <div class="header-links">
+    <div class="header" id="myHeader">
+        <div class="logo-con">
+            <img src="image/logo.png" alt="Logo" class="logo">
+            <h2>Cool Restaurant</h2>
+        </div>
+
+        <div class="header-links">
             <a href="menu.html">Menu</a>
             <a href="order.html">Order Online</a>
             <a href="reservation.html">Reservations</a>
             <a href="aboutus.html">About Us</a>
         </div>
+    </div>
+    <div class="content">
+        <img src="image/Meal-Plan-plate-protein.png" alt="Foodplate">
+        <article class="content_info">
+            <h1>On Scroll Sticky Header</h1>
+            <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset
+                concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur
+                eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.
+            </p>
+            <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset
+                concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur
+                eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.
+            </p>
+            <button>Read more...</button>
+        </article>
+    </div>
+
+    <div class="footer">
+        <div class="contact-info">
+            <div class="info-box">
+                <h2>Contact Us:</h2>
+                <h3>Cool Restaurant</h3>
+                <p>Address: Feikkikatu 7, Hämeenlinna</p>
+                <p>Phone: 044 123 4567</p>
+                <p>Email: cool.restaurant@gmail.com</p>
+            </div>
+            <div class="social-media">
+                <a href="#">
+                    <img src="image/icons8-facebook-48.png" alt="Facebook"></a>
+                <a href="#">
+                    <img src="image/icons8-twitter-48.png" alt="Twitter"></a>
+                <a href="#">
+                    <img src="image/icons8-instagram-48.png" alt="Instagram"></a>
+                <a href="#">
+                    <img src="image/icons8-youtube-48.png" alt="Youtube"></a>
+            </div>
         </div>
     </div>
-        <div class="content">
-            <img src="image/Meal-Plan-plate-protein.png" alt="Foodplate">
-            <h3>On Scroll Sticky Header</h3>
-            <p>The header will stick to the top when you reach its scroll position.</p>
-            <p>Scroll back up to remove the sticky effect.</p>
-            <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset
-                concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur
-                eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.
-            </p>
-            <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset
-                concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur
-                eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.
-            </p>
-            <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset
-                concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur
-                eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.
-            </p>
-        </div>
-
-        <script>
-            window.onscroll = function () { myFunction() };
-
-            var header = document.getElementById("myHeader");
-            var sticky = header.offsetTop;
-
-            function myFunction() {
-                if (window.pageYOffset > sticky) {
-                    header.classList.add("sticky");
-                } else {
-                    header.classList.remove("sticky");
-                }
-            }
-        </script>
-
-        <div class="footer">
-            <div class="contact-info">
-                <div class="info-box">
-                <h2>Contact Us:</h2>
-                  <h3>Cool Restaurant</h3>
-                  <p>Address: Feikkikatu 7, Hämeenlinna</p>
-                  <p>Phone: 044 123 4567 89</p>
-                  <p>Email: cool.restaurant@gmail.com</p>
-                </div>
-                <div class="social-media">
-                    <a href="#">
-                        <img src="image/icons8-facebook-48.png" alt="Facebook"></a>
-                    <a href="#">
-                        <img src="image/icons8-twitter-48.png" alt="Twitter"></a>
-                    <a href="#">
-                        <img src="image/icons8-instagram-48.png" alt="Instagram"></a>
-                    <a href="#">
-                        <img src="image/icons8-youtube-48.png" alt="Youtube"></a>    
-                </div>
-              </div>
-        </div>
 
     </div>
 </body>

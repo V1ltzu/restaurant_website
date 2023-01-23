@@ -1,19 +1,23 @@
+.logo-con {
+    display: flex;
+
+}
+
 .logo {
     width: 60px; 
-    height: 60px; 
-    object-fit: contain; 
-    float: left; 
-    margin-right: 10px; 
+    height: 60px;
+    margin: auto;
 
 }
 
 h2 {
     font-family: Times, serif;
     font-weight: bolder;
+    font-size: 25px;
 }
 
 body {
-    background-image: url(background2.jpg);
+    background-image: url(image/background2.jpg);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -35,52 +39,49 @@ body {
     box-sizing: border-box; /* include the padding and border in the total width and height */
     padding: 10px 16px;
     background: #006e6e;
-    color: #f1f1f1;
+    color: white;
     text-align: left;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.header-links{
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-    font-size: 20px;
-    cursor: pointer;
-}
 a{
     text-decoration: none;
+    font-weight: bold;
+    color: white;
 }
 a:hover{
     color: rgb(0, 0, 0);
 }
 
+.content {
+    display: flex;
+    padding: 100px;
+    gap: 70px;
+}
+.content_info {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
 .content img{
     padding: 16px;
     width: 40%;
-    height: 40%;
-    object-fit: contain;
+    height: auto;
 }
 
-
-.sticky {
-    position: fixed;
-    top: 0;
-    width: 100%
-}
-
-.sticky+.content {
-    padding-top: 50px;
-}
 
 .footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
     width: 100%;
     background-color: #006e6e;
     color: white;
     text-align: center;
     text-align: 1vw;
+    line-height: 1;
 }
 
 button {
@@ -91,14 +92,15 @@ button {
     border: none;
     float: right;
     margin-left: 10px;
+    width: fit-content;
   }
 
   .header-links {
     display: flex;
     justify-content: flex-end;
-    margin-top: -35px;
-    margin-right: 10px; 
-    padding-left: 10px 10px;
+    gap: 20px;
+    font-size: 20px;
+    cursor: pointer;
   }
   
   button:hover {
@@ -122,4 +124,8 @@ button {
 .contact-info{
     display: flex;
     flex-direction: column;
+}
+
+.container{
+    align-items: center;
 }
