@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,51 +9,57 @@
     <link rel="stylesheet" href="style.css">
 
 
-    
+
 </head>
+
 <body>
 
     <div class="container">
 
-    <div class="header" id="myHeader">
-        <h2>Cool Restaurant</h2>
-      </div>
+        <div class="header" id="myHeader">
+            <h2 style="font-size: 1.5vw;">Cool Restaurant</h2>
+        </div>
 
-      <!DOCTYPE html>
-<html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+        <div class="content">
+            <img src="Meal-Plan-plate-protein.png" width="25%" height="25%">
+            <h3>On Scroll Sticky Header</h3>
+            <p>The header will stick to the top when you reach its scroll position.</p>
+            <p>Scroll back up to remove the sticky effect.</p>
+            <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset
+                concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur
+                eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.
+            </p>
+            <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset
+                concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur
+                eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.
+            </p>
+            <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset
+                concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur
+                eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.
+            </p>
+        </div>
 
+        <script>
+            window.onscroll = function () { myFunction() };
 
-<div class="content">
-    <img src="Meal-Plan-plate-protein.png" width="25%" height="25%">
-  <h3>On Scroll Sticky Header</h3>
-  <p>The header will stick to the top when you reach its scroll position.</p>
-  <p>Scroll back up to remove the sticky effect.</p>
-  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-</div>
+            var header = document.getElementById("myHeader");
+            var sticky = header.offsetTop;
 
-<script>
-window.onscroll = function() {myFunction()};
+            function myFunction() {
+                if (window.pageYOffset > sticky) {
+                    header.classList.add("sticky");
+                } else {
+                    header.classList.remove("sticky");
+                }
+            }
+        </script>
 
-var header = document.getElementById("myHeader");
-var sticky = header.offsetTop;
+        <div class="footer">
+            <p style="margin-right: 1250px;">Contact:</p>
+            <p style="margin-right: 1000px">044 123 4567 89</p>
+        </div>
 
-function myFunction() {
-  if (window.pageYOffset > sticky) {
-    header.classList.add("sticky");
-  } else {
-    header.classList.remove("sticky");
-  }
-}
-</script>
-
-<div class="footer">
-    <p style="font-size:1vw; margin-right: 1250px;">Contact:</p>
-  </div>
-  
-</div>
+    </div>
 </body>
+
 </html>
