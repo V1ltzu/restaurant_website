@@ -1,13 +1,11 @@
 .logo-con {
     display: flex;
-
 }
 
 .logo {
     width: 60px; 
     height: 60px;
     margin: auto;
-
 }
 
 h2 {
@@ -35,7 +33,7 @@ body {
 
 .header {
     width: 100%; /* set the width of the header container */
-    height: 80px; /* set the height of the header container */
+    height: 70px; /* set the height of the header container */
     box-sizing: border-box; /* include the padding and border in the total width and height */
     padding: 10px 16px;
     background: #006e6e;
@@ -52,6 +50,7 @@ a{
     font-weight: bold;
     color: white;
 }
+
 a:hover{
     color: rgb(0, 0, 0);
 }
@@ -61,6 +60,7 @@ a:hover{
     padding: 100px;
     gap: 70px;
 }
+
 .content_info {
     width: 35%;
     display: flex;
@@ -70,10 +70,9 @@ a:hover{
 
 .content img{
     padding: 16px;
-    width: 40%;
-    height: auto;
+    size: auto;
+    max-height: 400px;
 }
-
 
 .footer {
     width: 100%;
@@ -81,36 +80,38 @@ a:hover{
     color: white;
     text-align: center;
     text-align: 1vw;
-    line-height: 1;
+    line-height: 0.6;
+    padding-bottom: 15px;
 }
 
 button {
-    background-color: blue;
-    color: white;
+    background-color: white;
+    color: black;
     padding: 10px 20px;
     border-radius: 5px;
     border: none;
     float: right;
     margin-left: 10px;
-    width: fit-content;
-  }
+    width: fit-content;    
+}
 
-  .header-links {
+.header-links {
     display: flex;
     justify-content: flex-end;
     gap: 20px;
     font-size: 20px;
     cursor: pointer;
-  }
+    
+}
   
-  button:hover {
-    background-color: darkblue;
-  }
+button:hover {
+    background-color: rgb(102, 102, 107);
+}
 
-  .social-media {
+.social-media {
     display: flex; 
     justify-content: center; 
-    image-resolution: 50%;
+    image-resolution: 70%;
 }
 
 .social-media a img{
@@ -128,4 +129,23 @@ button {
 
 .container{
     align-items: center;
+}
+
+.menu_con {
+    padding-top: 100px;
+    text-align: center;
+}
+
+.menu_con h1 {
+    margin: 60px;
+}
+
+.maincourse{
+    display: flex;
+}
+
+.food_item {
+    display: flex;
+    flex-direction: column;
+   align-items: center;
 }
