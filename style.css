@@ -3,13 +3,13 @@
 }
 
 .logo {
-    width: 60px; 
+    width: 70px; 
     height: 60px;
     margin: auto;
 }
 
 .logo-3 {
-    width: 200px; 
+    width: 250px; 
     height: 70px;
     margin: auto;
 }
@@ -38,9 +38,9 @@ body {
 }
 
 .header {
-    width: 100%;
-    height: 70px; 
-    box-sizing: border-box; 
+    width: 100%; /* set the width of the header container */
+    height: 70px; /* set the height of the header container */
+    box-sizing: border-box; /* include the padding and border in the total width and height */
     padding: 10px 16px;
     background:#006e6e;
     color: white;
@@ -72,7 +72,7 @@ a:hover{
     display: flex;
     flex-direction:column;
     justify-content:center;
-    font-size:25px;
+    font-size:20px;
     font-style: italic;
     font-family: 'Times New Roman', Times, serif;
 }
@@ -108,7 +108,8 @@ button {
     display: flex;
     justify-content: flex-end;
     gap: 20px;
-    font-size: 20px;
+    font-size: 23px;
+    font-family: 'Times New Roman', Times, serif;
     cursor: pointer;
     
 }
@@ -147,7 +148,6 @@ button:hover {
 
 .menu_con h1 {
     margin: 60px;
-    font-family: Georgia, Times, 'Times New Roman', serif;
 }
 
 .maincourse{
@@ -192,4 +192,8 @@ button:hover {
     }
 }
 
-#more {display: none;}
+iframe
+{
+    width: 30%;
+    height: 80px;
+}
