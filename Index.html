@@ -32,11 +32,14 @@
         <article class="content_info">
             <P>
                 <h1>Welcome to our Restaurant</h1>
-                <h4>Great food & nice view of the city <br>New customers are always welcome</h4>
+                <h4>Our promise is to provide great food and a stunning view of the city.<br>Everyone is welcome to enjoy our services.</h4>
             </P>
        
                     
-            <button>Read more...</button>
+            <button onclick="myFunction()" id="myBtn">Read more</button>
+            <span id="dots">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas modi ab quisquam iste, tenetur officia, sit vel, blanditiis magni esse officiis rerum libero iure reprehenderit harum? Eaque adipisci dolorem quis.</span><span id="more"></span>
+            
+
         </article>
         <img src="image/Meal-Plan-plate-protein.png" alt="Foodplate">
     </div>
@@ -64,6 +67,25 @@
     </div>
 
     </div>
+
+    <script>
+        function myFunction() {
+        var dots = document.getElementById("dots");
+        var moreText = document.getElementById("more");
+        var btnText = document.getElementById("myBtn");
+      
+        if (dots.style.display === "none") {
+          dots.style.display = "inline";
+          btnText.innerHTML = "Read more";
+          moreText.style.display = "none";
+        } else {
+          dots.style.display = "none";
+          btnText.innerHTML = "Read less";
+          moreText.style.display = "inline";
+        }
+      }
+      </script>
+
 </body>
 
 </html>
