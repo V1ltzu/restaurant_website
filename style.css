@@ -184,77 +184,23 @@ button:hover {
     background-color: #f1f1f1;
 }
 
+iframe
+{
+    width: 100%;
+    height: 180px;
+}
 
+.content .imgAbout
+{
+   max-height: 500px;
+}
 
 @media screen and (max-width: 800px) {
     .maincourse{
         flex-direction: column;
     }
-}
 
-iframe
-{
-    width: 30%;
-    height: 80px;
-}
-
-.order-content{
-    padding-top: 150px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
-}
-
-.order-rows{
-    display: flex;
-    flex-direction: row;
-    gap: 50px;
-    border-bottom: 1px solid white;
-    margin-bottom: 5px;
-}
-
-.order-rows-img {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.order-rows-img img{
-    width: 300px;
-}
-
-.order-rows-img-container{
-    height: 400px;
-    width: 300px;
-}
-
-.order-rows-button {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-.order-rows-button button{
-    background-color: white;
-    cursor: pointer;
-    font-size: 15px;
-}
-
-.order-rows-button button:hover{
-    background-color:#006e6e;
-    color: white;
-}
-
-.order-rows-button button:active{
-    background-color:white;
-    color: black;
-}
-
-.order-drinks img{
-    width: 250px;
-}
-
-.order-desserts img{
-    width: 250px;
+    .content {
+        display: block;
+    }
 }
