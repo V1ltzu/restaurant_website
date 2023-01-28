@@ -9,7 +9,7 @@
 .order-rows{
     display: flex;
     flex-direction: row;
-    gap: 50px;
+    gap: 30px;
     border-bottom: 1px solid white;
     margin-bottom: 5px;
 }
