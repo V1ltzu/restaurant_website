@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,48 +9,51 @@
     <title>Cool Restaurant</title>
     <link rel="stylesheet" href="style.css">
 
+
 </head>
        
 <body>
 
+
     <div class="header" id="myHeader">
+
 
         <a class="logo-con" href="index.html">
            <img src="image/cool-logo01.png" alt="cool-logo01" class="logo">
            <img src="image/cool-font03.png" alt="cool-font03" class="logo-3">
         </a>
 
+
         <div class="header-links">
             <a href="index.html">Home</a>
-            <a href="menu.html">Menu</a>
-            <a href="order.html">Order Online</a>
-            <a href="reservation.html">Reservations</a>
+            <a href="order.html">Menu</a>
+            <a href="#">Reservations</a>
             <a href="aboutus.html">About Us</a>
         </div>
     </div>
     <div class="content">
-        
+       
         <article class="content_info">
             <P>
                 <h1>Welcome to our Restaurant</h1>
-                <h4>Our promise is to provide great food and a stunning view of the city.<br>Everyone is welcome to enjoy our services.</h4>
-            </P>                    
-            <button>Read more...</button>
+                <h4>Our promise is to provide great food and a stunning view of the city.<br>Everyone is welcome to enjoy our services.</h4></P>                    
+           
+                <p class="more" ><br>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br>
+                              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <button class="readmore">Read more...</button>
         </article>
         <img src="image/Meal-Plan-plate-protein.png" alt="Foodplate">
     </div>
 
 
-    
-
     <div class="footer">
         <div class="contact-info">
             <div class="info-box">
                 <h3>Contact Us:</h3>
-                
+               
                 <a class="call" href="tel:0441234567" style="color: #fff;">044 123 4567</a>
-                <p>Email: cool.restaurant@gmail.com</p>
-                <p>Address: Feikkikatu 7, Hämeenlinna</p>
+                <p>cool.restaurant@gmail.com</p>
+                <p>Feikkikatu 7, Hämeenlinna</p>
             </div>
             <div class="social-media">
                 <a href="https://www.facebook.com/">
@@ -64,8 +68,28 @@
         </div>
     </div>
 
+
 </div>
 
+
+<script>
+    const button = document.querySelector('.readmore');
+    const more = document.querySelector('.more');
+    button.addEventListener('click', function() {
+        if (button.innerText === "Read more...") {
+            button.innerText = "Read less...";
+            more.style.display = "block";
+        } else {
+            button.innerText = "Read more...";
+            more.style.display = "none";
+        }
+    });
+</script>
+
+
+
+
 </body>
+
 
 </html>
